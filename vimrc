@@ -269,3 +269,6 @@ highlight link SyntasticStyleWarningSign SignColumn
 " Use local ESlint from:
 " http://remarkablemark.org/blog/2016/09/28/vim-syntastic-eslint/
 let g:syntastic_javascript_eslint_exe = '$(npm bin)/eslint'
+
+let g:syntastic_typescript_tsc_fname = ''
+autocmd BufNewFile,BufRead *.ts setlocal filetype=typescript

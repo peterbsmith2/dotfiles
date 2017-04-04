@@ -12,6 +12,9 @@ Bundle 'gmarik/vundle'
 Plugin 'pangloss/vim-javascript'
 Plugin 'mxw/vim-jsx'
 
+" TypeScript
+Plugin 'leafgarland/typescript-vim'
+
 " Show Git Diffs in Gutter
 Bundle 'airblade/vim-gitgutter'
 " Autoclose { ( " '
