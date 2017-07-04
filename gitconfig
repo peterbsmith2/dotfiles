@@ -1,9 +1,7 @@
-[core]
-  quotepath = false
-  excludesfile = ~/.gitignore
-  editor = vim
-  pager = less -r
-	exclucdesfile = /Users/Peter/.gitignore
+[init]
+	templatedir = ~/.git_template
+[push]
+  default = simple
 [color]
   ui = auto
   interactive = auto
@@ -27,30 +25,23 @@
   g = grep --break --heading --line-number
   tidy = "!git branch --merged | grep -v '\\*\\|master\\|develop' | xargs -n 1 git branch -d"
   prune = remote prune origin
-
+[core]
+  quotepath = false
+  excludesfile = ~/.gitignore
+  editor = vim
+  pager = less -r
+[commit]
+  template = ~/.gitmessage
+[include]
+  path = ~/.gitconfig.local
 [filter "media"]
 	required = true
 	clean = git media clean %f
 	smudge = git media smudge %f
-[include]
-  path = .gitconfig.local
-[commit]
-  template = ~/.gitmessage
 [grep]
   extendRegexp = true
   lineNumber = true
-[push]
-  default = simple
-[include]
-  path = ~/.gitconfig.local
-[init]
-	templatedir = ~/.git_template
 [filter "lfs"]
 	clean = git lfs clean %f
 	smudge = git lfs smudge %f
 	required = true
-[user]
-	name = Peter B Smith
-	email = peterbutlersmith@gmail.com
-[cor]
-	editor = vim
